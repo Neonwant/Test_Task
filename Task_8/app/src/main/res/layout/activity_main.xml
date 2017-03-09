@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/linearLayout"
+        android:background="@drawable/shadow"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/star"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.60"
+            android:background="@color/colorPrimary"
+            android:text="TOP"
+            android:textColor="@color/vk_white"
+            android:textSize="12dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.60"
+            android:background="@color/colorPrimary"
+            android:text="SEARCH"
+            android:textColor="@color/vk_white"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow"/>
+
+        <Button
+            android:id="@+id/playListOnline"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.60"
+            android:background="@color/colorPrimary"
+            android:text="Online"
+            android:textColor="@color/vk_white"
+            android:textSize="12dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow"/>
+
+        <Button
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.60"
+            android:background="@color/colorPrimary"
+            android:text="download"
+            android:textColor="@color/vk_white"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow"/>
+
+        <Button
+            android:id="@+id/playList"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.60"
+            android:background="@color/colorPrimary"
+            android:text="PlayList"
+            android:textColor="@color/vk_white"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+</RelativeLayout>
